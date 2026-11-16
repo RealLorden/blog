@@ -1,0 +1,11 @@
+name = "steam-proxy"
+main = "worker.js"
+compatibility_date = "2026-11-01"
+
+[vars]
+# Kommaseparerad lista med adresser som får anropa Workern, t.ex.
+# "https://minsida.se,http://localhost:5173". "*" tillåter alla (inte rekommenderat).
+ALLOWED_ORIGINS = "http://localhost:5173"
+
+# STEAM_API_KEY läggs INTE här, utan som hemlighet:
+#   npx wrangler secret put STEAM_API_KEY
